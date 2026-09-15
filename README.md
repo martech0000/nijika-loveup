@@ -6,7 +6,7 @@ GitHub Pagesで公開できる静的ランディングページです。
 
 - `index.html`：LP本体
 - `styles.css`：表示幅、つなぎ目グラデーション、CTAリンク領域
-- `assets/`：LP画像8枚
+- `assets/`：LP画像10枚
 - `.nojekyll`：GitHub PagesでJekyll処理を行わないためのファイル
 - `set-cta-url.ps1`：申込み先URLを2つのCTAへ一括設定するスクリプト
 - `GITHUB_PUBLISH_GUIDE.md`：公開手順
