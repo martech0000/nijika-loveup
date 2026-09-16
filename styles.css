@@ -35,6 +35,29 @@ body {
   background: transparent;
 }
 
+/* Adjacent artwork is blended directly; no white veil or blur is added. */
+.visual-section:nth-child(n + 2):nth-child(-n + 5) {
+  --section-blend: clamp(24px, 4.5vw, 48px);
+  margin-top: calc(var(--section-blend) * -1);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    #000 var(--section-blend),
+    #000 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    #000 var(--section-blend),
+    #000 100%
+  );
+}
+
+/* The reframing headline sits closer to the top edge. */
+.visual-section:nth-child(5) {
+  --section-blend: clamp(20px, 3vw, 32px);
+}
+
 .visual-section img {
   display: block;
   width: 100%;
